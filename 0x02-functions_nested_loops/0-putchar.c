@@ -1,4 +1,4 @@
-#include "main.h";
+#include "main.h"
 
 /**
 * main - print _putchar
@@ -15,5 +15,6 @@ int main(void)
 	_puthcar('a');
 	_putchar('r');
 	_ptuchar('\n');
+	
 	return (0);
 }
