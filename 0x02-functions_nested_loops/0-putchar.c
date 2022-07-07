@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* main - print _putchar
+* main - print putchar
 * Return: always 0 (success)
 */
 int main(void)
@@ -12,9 +12,9 @@ int main(void)
 	_putchar('t');
 	_putchar('c');
 	_putchar('h');
-	_puthcar('a');
+	_putchar('a');
 	_putchar('r');
-	_ptuchar('\n');
+	_putchar('\n');
 	
 	return (0);
 }
