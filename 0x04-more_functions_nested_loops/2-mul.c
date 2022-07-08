@@ -1,31 +1,14 @@
-lude "main.h"
-
-
+nclude "main.h"
 
 /**
- *
- *  * mul - multiplies two integers
- *
- *   * @a: int to be multiplied to b
- *
- *    * @b: int to be multiplied to a
- *
- *     * Return: the result of the operation
- *
- *      */
+* mul -> multiplying 2 numbers
+* @a: interger param1
+* @b: integer param 2
+* Return: success and intiger
+*/
 
 int mul(int a, int b)
-
 {
-
-		int c;
-
-
-
-			c = a * b;
-
-
-
-				return (c);
-
+	return (a * b);
 }
+
