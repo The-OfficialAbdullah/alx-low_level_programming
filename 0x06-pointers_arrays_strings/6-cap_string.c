@@ -18,11 +18,13 @@ char *cap_string(char *str)
 	{
 		if (str[0] >= 'a' && str[0] <= 'z')
 			hasWord = 1;
+
 		for (j = 0; separators[j] != '\0'; j++)
 		{
 			if (separators[j] == str[i])
 				hasWord = 1;
 		}
+
 		if (hasWord)
 		{
 			if (str[i] >= 'a' && str[i] <= 'z')
@@ -36,4 +38,5 @@ char *cap_string(char *str)
 				hasWord = 0;
 		}
 	}
+	return (str);
 }
