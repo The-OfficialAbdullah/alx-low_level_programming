@@ -2,41 +2,41 @@
 
 /**
  * *cap_string - capitalizes all words of a string
- * @str: the string
- * @str: the string
- * Return: the string
+ * @s: the string
+ *
+ * Return: the resulting string
  */
 
-char *cap_string(char *str)
+char *cap_string(char *s)
 {
 	int i, j;
 	int hasWord;
 	char separators[] = ",;.!?(){}\n\t\"";
 
-	for (i = 0; hasWord = 0; str[i] != '\0')
+	for (i = 0; hasWord = 0; s[i] != '\0')
 		i++;
 	{
-		if (str[0] >= 'a' && str[0] <= 'z')
+		if (s[0] >= 'a' && s[0] <= 'z')
 			hasWord = 1;
 
 		for (j = 0; separators[j] != '\0'; j++)
 		{
-			if (separators[j] == str[i])
+			if (separators[j] == s[i])
 				hasWord = 1;
 		}
 
 		if (hasWord)
 		{
-			if (str[i] >= 'a' && str[i] <= 'z')
+			if (s[i] >= 'a' && s[i] <= 'z')
 			{
-				str[i] -= ('a' - 'A');
+				s[i] -= ('a' - 'A');
 				hasWord = 0;
 			}
-			else if (str[i] >= 'A' && str[i] <= 'Z')
+			else if (s[i] >= 'A' && s[i] <= 'Z')
 				hasWord = 0;
-			else if (str[i] >= '0' && str[i] <= '9')
+			else if (s[i] >= '0' && s[i] <= '9')
 				hasWord = 0;
 		}
 	}
-	return (str);
+	return (s);
 }
