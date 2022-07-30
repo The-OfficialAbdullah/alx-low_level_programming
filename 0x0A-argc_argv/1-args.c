@@ -3,8 +3,8 @@
 /**
  * main - this is a function to print its name
  * @argc: argc parameter
- * @ardv: an array of a command listed
- * Retrurn: 0 for success
+ * @argv: an array of a command listed
+ * Return: 0 for success
  */
 int main(int argc, char *argv[] __attribute__((unused)))
 {
