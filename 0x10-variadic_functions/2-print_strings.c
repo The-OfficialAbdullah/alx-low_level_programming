@@ -5,11 +5,11 @@
 /**
  * print_strings - prints string followed by a new line
  * @separator: string to be printed between strings
- * @n: number of string
+ * @n: number of strings
  *
  * Return: void
  */
-int print_string(const char *separator, const unsigned int n, ...)
+int print_strings(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
 	char *s;
@@ -24,8 +24,8 @@ int print_string(const char *separator, const unsigned int n, ...)
 	{
 		s = va_arg(strings, char *);
 
-		if (s n== NULL)
-			s = "(nil);
+		if (s == NULL)
+			s = "(nil)";
 		printf("%s", s);
 		if (i < n - 1)
 		{
