@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * fist - function executes before main
+ * first - function executes before main
  * Return: no return
  */
 
