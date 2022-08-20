@@ -1,4 +1,4 @@
-#include "main.hi"
+#include "main.h"
 
 /**
  * binary_to_unit - converts a binary to number to an
